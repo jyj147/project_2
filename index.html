@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "맑은 고딕";
+        }
+
+        ul,
+        li,
+        ol {
+            list-style: none;
+        }
+
+        header {
+            width: 1200px;
+            height: 100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        #logo {
+            width: 118px;
+            height: 44px;
+            background-image: url(img/main_logo.jpg);
+        }
+
+        .tell {
+            width: 149px;
+            height: 20px;
+        }
+
+        .tell i {
+            color: #009223;
+            font-size: 20px;
+        }
+
+        .tell i:hover {
+            color: #ffce32;
+        }
+
+        .button {
+            width: 169px;
+            height: 34px;
+            background-color: #fff;
+            border: solid 3px #009223;
+            border-radius: 20px;
+            color: #333;
+            font-size: 20px;
+            text-align: center;
+            /* margin: -69px 0px 0px 906px; */
+            opacity: 0.9;
+        }
+
+        nav {
+            width: 495.61px;
+
+            text-align: center;
+        }
+
+        nav ul li {
+            float: left;
+            padding: 0px 26px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav ul a:hover {
+            color: green;
+        }
+
+
+
+        #slider {
+            width: 100%;
+            height: 820px;
+            background-color: #009223;
+            opacity: 0.8;
+            padding-top: 220px;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        #slider>.content {
+            width: 1200px;
+            height: 380px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #slider .content h2 {
+            font-family: 'Lobster', cursive;
+            font-size: 130px;
+            color: #ffce32;
+            opacity: 0.7;
+            position: absolute;
+            top: -49px;
+            left: -18px;
+        }
+
+        #slider .content h1 {
+            position: absolute;
+            top: 37px;
+            left: 0;
+            font-size: 80px;
+            color: #ffce32;
+            line-height: 80px;
+        }
+
+        #slider .content span {
+            font-size: 50px;
+            color: #fff;
+        }
+
+        #slider img {
+            position: relative;
+        }
+
+        #slider button {
+            color: #333;
+            width: 188px;
+            height: 60px;
+            font-size: 30px;
+            float: left;
+            text-align: center;
+            border: solid #fff 3px;
+            border-radius: 30px;
+            background-color: #009223;
+            color: #fff;
+            position: absolute;
+            bottom: 56px;
+        }
+
+        #slider .round {
+            width: 1000px;
+            height: 1000px;
+            border-radius: 50%;
+            position: absolute;
+            top: -180px;
+            right: -180px;
+            background-image: url(img/slider.jpg);
+        }
+
+
+
+        section {
+            width: 1200px;
+            height: 836px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: center;
+        }
+
+        section .popular {
+            width: 100%;
+            height: 20%;
+
+        }
+
+        .popular h1 {
+            font-size: 50px;
+        }
+
+        .popular p {
+            font-size: 57px;
+            font-weight: bold;
+            color: #ffce32;
+            text-align: center;
+
+        }
+
+        .container {
+            text-align: center;
+            float: left;
+
+        }
+
+        .container p {
+            font-size: 40px;
+        }
+
+        .container h2 {
+            font-size: 40px;
+        }
+
+        .container span {
+            font-size: 16px;
+        }
+
+        .container button {
+            font-size: 25px;
+            width: 170px;
+            height: 50px;
+            text-align: center;
+
+            border: solid#009223 3px;
+            border-radius: 30px;
+            background-color: #fff;
+        }
+
+        .container button:hover {
+            color: #ffce32;
+        }
+
+        article button {
+            /* margin: 0; */
+            font-size: 25px;
+            width: 170px;
+            height: 50px;
+            text-align: center;
+            border: solid#009223 3px;
+            border-radius: 30px;
+            background-color: #fff;
+            width: 100%;
+            height: 14%;
+            flex-wrap: revert;
+            float: left;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+
+        article button:hover {
+            color: #009223;
+        }
+
+        article {
+            width: 360px;
+            height: 432px;
+            float: left;
+
+            background-color: #ffce32;
+            background: rgb(199, 250, 189);
+            padding: 20px;
+            border-radius: 0 0 60px 0;
+
+
+
+        }
+
+
+
+        section article img {
+            display: inline-block;
+            width: 100%;
+            border-radius: 0 0 60px 0;
+        }
+
+        section article h3 {
+            text-align: center;
+            height: 50px;
+        }
+
+        section article p {
+            height: 60px;
+        }
+
+        section h1 {
+            text-align: center;
+        }
+
+
+
+        section p {
+            text-align: center;
+            font-size: 15px;
+
+        }
+
+
+
+        footer {
+            width: 100%;
+            height: 434px;
+            background-color: #eee;
+            margin: 421px 0px 0px 0px;
+        }
+
+        .foot {
+            width: 100%;
+            height: 294px;
+            background-color: pink;
+            margin: 47px 0px 0px 0px;
+            float: left;
+        }
+
+        #dongle {
+            width: 1200px;
+            height: 614px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+        }
+
+        .box {
+            background-image: url(img/circle_sandwich1.png);
+            width: 570px;
+            height: 504.08px;
+
+        }
+
+        .explain {
+            background-color: honeydew;
+            width: 100%;
+            height: 802px;
+
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+        .ball_icon{width: 100px; height: 100px; background-color: #ffce32;}
+        .explain1 {
+            width: 1200px;
+            height: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: center;
+
+        }
+
+        .explain1 p {
+            color: #009223;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .explain1 h2 {
+            color: black;
+            font-size: 50px;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        .gimg {
+            width: 118px;
+            height: 118px;
+            background-color: #333;
+            margin-top: -125px;
+        }
+
+        .icon {
+            width: 30%;
+            height: 50%;
+            background-color: #ffce32;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: center;
+        }
+        
+        .icon p {
+    color: #009223;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    height: 64px;}
+
+        .icon span{text-align: center; font-size: 15px;height: 0px;
+   
+        }
+
+        .video {
+            background-color: yellowgreen;
+            width: 100%;
+            height: 600px;
+            margin: 0px 0px 0px 0px;
+        }
+
+
+
+        #rrr {
+            background-color: #ffce32;
+            width: 100%;
+            height: 500px;
+        }
+
+        .review {
+            background-color: blue;
+            width: 400px;
+            text-align: center;
+            margin: 16px 0px 0px 747px;
+        }
+
+        .review2 {
+            background-color: blue;
+            width: 436px;
+            height: 357px;
+            margin: 42px -275px 0px 423px;
+            float: left;
+        }
+
+        .insta1 {
+            width: 475.75px;
+            height: 426.19px;
+            background-color: pink;
+            margin: 442px 0px 0px -1168px;
+            float: left;
+        }
+
+        .insta2 {
+            width: 475.75px;
+            height: 426.19px;
+            background-color: blue;
+            margin: 442px 0px 0px -692px;
+            float: left;
+        }
+
+        .insta3 {
+            width: 475.75px;
+            height: 426.19px;
+            background-color: pink;
+            margin: 43px 0px 0px 952px;
+            float: left;
+        }
+
+        .insta4 {
+            width: 475.75px;
+            height: 426.19px;
+            background-color: blue;
+            margin: -426px 0px 0px 1428px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+
+        </div>
+        <nav>
+            <ul>
+                <li> <a href="#"> Home</a></li>
+                <li> <a href="#">Product</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Blog</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="tell">
+            <i class="fa-solid fa-phone"></i>
+            <span>:02-797-5034</span>
+            <!-- <img src="img/phone.jpg" alt=""> -->
+
+        </div>
+
+        <div class="button">Order Online</div>
+    </header>
+
+
+    <div id="slider">
+
+        <div class="round"></div>
+        <div class="content">
+            <h2>Delicious</h2>
+            <h1> <span>올겨울은 따뜻하게</span> <br>바비큐 컬렉션
+            </h1>
+            <button>자세히보기</button>
+        </div>
+        <!-- <img src="img/main_banner.jpg" alt=""> -->
+
+    </div>
+    <section>
+        <div class="popular">
+            <p>Most Popular</p>
+            <h1>Our Exclusive Sandwich</h1>
+        </div>
+        <article>
+            <img src="img/eggmayo.jpg" alt="">
+            <h3>Eggmayo sandwich </h3>
+            <p>부드러운 달걀과 고소한 마요네즈가 만나 <br> 더 부드러운 스테디셀러</p>
+            <button>$20 Oder Now</button>
+        </article>
+        <article>
+            <img src="img/bmt.jpg" alt="">
+            <h3>Italian bmt sandwich </h3>
+            <p>페퍼로니, 살라미 그리고 햄이 만들어내는 최상의 조화! <br>
+                전세계가 사랑하는 써브웨이의 베스트셀러! <br> Biggest Meatiest Tastiest, its’ B.M.T.
+            </p>
+            <button>$20 Oder Now</button>
+        </article>
+        <article>
+            <img src="img/tuna.jpg" alt="">
+            <h3>Tuna sandwich</h3>
+            <p>남녀노소 누구나 좋아하는 담백한 참치와 <br>
+                고소한 마요네즈의 완벽한 조화</p>
+            <button>$20 Oder Now</button>
+        </article>
+
+    </section>
+
+    <div id="dongle">
+        <div class="box"></div>
+
+        <div class="container">
+            <p>Delicious&Fresh</p>
+            <h2> A Simple Way to Eating Delicious</h2>
+            <span>매일 매장에 배송되는 신선한 야채들은 각 매장에서 정성스럽게 손질됩니다. <br>
+                엄격한 규율에 따라 세척 과정을 거친 야채들은
+                당일 판매되는 양만큼 준비되며, <br> 언제나 신선한 최상의 야채를
+                안전하게 제공하는 것이 써브웨이의 목표입니다.</span> <br><br>
+            <button>Our Story</button>
+        </div>
+    </div>
+
+
+    <div class="explain">
+        <div class="ball_icon"></div>
+        <div class="explain1">
+            <p>Global Subway</p>
+            <h2>Qulity is Our First Priority</h2>
+            <div class="icon">
+                <div class="gimg"> <img src="img/guest.png" alt=""></div>
+                <p>Guest First</p> 
+                <span>샌드위치 아티스트™는<br> 항상 고객을 우선으로 생각하며 
+                    고객이 무엇을 원하는지 경청합니다.</span>
+            </div>
+            <div class="icon">
+                <div class="gimg"><img src="img/food.png" alt=""></div>
+                <p>Great Food</p>  
+                <span>샌드위치 아티스트™는 <br>
+                    언제나 완벽한 샌드위치를 만듭니다.</span>
+            </div>
+            <div class="icon">
+                <div class="gimg"><img src="img/store.png" alt=""></div>
+                <p>Great Store</p> 
+                <span>샌드위치 아티스트™는 <br> 각종 재료의 신선함과
+                    매장의 청결을 철저하게 관리합니다.</span>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="video">
+        <a href=""></a>
+    </div>
+
+    <div id="rrr">
+        <div class="review">
+            <span>Testimonial</span>
+            <h2>What Customers Say</h2>
+        </div>
+
+        <div class="review2">
+        </div>
+        <div class="review2">
+        </div>
+
+        <div id="insta_box">
+            <div class="insta1"></div>
+            <div class="insta2"></div>
+            <div class="insta3"></div>
+            <div class="insta4"></div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <div class="foot">
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
