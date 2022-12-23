@@ -294,22 +294,6 @@
         }
 
 
-
-        footer {
-            width: 100%;
-            height: 434px;
-            background-color: #eee;
-            margin: 421px 0px 0px 0px;
-        }
-
-        .foot {
-            width: 100%;
-            height: 294px;
-            background-color: pink;
-            margin: 47px 0px 0px 0px;
-            float: left;
-        }
-
         #dongle {
             width: 1200px;
             height: 614px;
@@ -329,15 +313,25 @@
         .explain {
             background-color: honeydew;
             width: 100%;
-            height: 802px;
+            height: 764px;
 
 
             display: flex;
 
             justify-content: center;
             align-items: center;
+            position: relative;
         }
-        .ball_icon{width: 100px; height: 100px; background-color: #ffce32;}
+
+        .onion_icon {
+            width: 487px;
+            height: 261px;
+            background-image: url(img/onion.png);
+            position: absolute;
+            top: -260px;
+            right: 0px;
+        }
+
         .explain1 {
             width: 1200px;
             height: 90%;
@@ -367,33 +361,37 @@
         .gimg {
             width: 118px;
             height: 118px;
-            background-color: #333;
+
             margin-top: -125px;
         }
 
         .icon {
             width: 30%;
             height: 50%;
-            background-color: #ffce32;
+
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             align-content: center;
         }
-        
-        .icon p {
-    color: #009223;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    height: 64px;}
 
-        .icon span{text-align: center; font-size: 15px;height: 0px;
-   
+        .icon p {
+            color: #009223;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+            height: 64px;
         }
 
-        .video {
-            background-color: yellowgreen;
+        .icon span {
+            text-align: center;
+            font-size: 15px;
+            height: 0px;
+
+        }
+
+        .video video {
+
             width: 100%;
             height: 600px;
             margin: 0px 0px 0px 0px;
@@ -403,55 +401,51 @@
 
         #rrr {
             background-color: #ffce32;
-            width: 100%;
-            height: 500px;
+            width: 1200px;
+            height: 659px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: center;
+            position: relative;
         }
 
-        .review {
-            background-color: blue;
-            width: 400px;
+        .rbox {
+            width: 63%;
+            height: 12%;
+            background-color: aqua;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: center;
+            margin-top: 0px;
+            position: absolute;
+        }
+
+        .rbox h2 {
             text-align: center;
-            margin: 16px 0px 0px 747px;
+            font-size: 40px;
         }
 
-        .review2 {
-            background-color: blue;
-            width: 436px;
-            height: 357px;
-            margin: 42px -275px 0px 423px;
+        .reviewbox section {
+            width: 334px;
+            height: 378px;
+            background-color: #333;
             float: left;
+            margin: 2px 35px 0px 36px;
         }
 
-        .insta1 {
-            width: 475.75px;
-            height: 426.19px;
-            background-color: pink;
-            margin: 442px 0px 0px -1168px;
-            float: left;
+        .insta {
+            display: flex;
+
         }
 
-        .insta2 {
-            width: 475.75px;
-            height: 426.19px;
-            background-color: blue;
-            margin: 442px 0px 0px -692px;
-            float: left;
-        }
+        .insta section {
+            width: 25%;
+            height: 426px;
+            background-color: aqua;
 
-        .insta3 {
-            width: 475.75px;
-            height: 426.19px;
-            background-color: pink;
-            margin: 43px 0px 0px 952px;
-            float: left;
-        }
-
-        .insta4 {
-            width: 475.75px;
-            height: 426.19px;
-            background-color: blue;
-            margin: -426px 0px 0px 1428px;
-            float: left;
         }
     </style>
 </head>
@@ -539,25 +533,25 @@
 
 
     <div class="explain">
-        <div class="ball_icon"></div>
+        <div class="onion_icon"></div>
         <div class="explain1">
             <p>Global Subway</p>
             <h2>Qulity is Our First Priority</h2>
             <div class="icon">
                 <div class="gimg"> <img src="img/guest.png" alt=""></div>
-                <p>Guest First</p> 
-                <span>샌드위치 아티스트™는<br> 항상 고객을 우선으로 생각하며 
+                <p>Guest First</p>
+                <span>샌드위치 아티스트™는<br> 항상 고객을 우선으로 생각하며
                     고객이 무엇을 원하는지 경청합니다.</span>
             </div>
             <div class="icon">
                 <div class="gimg"><img src="img/food.png" alt=""></div>
-                <p>Great Food</p>  
+                <p>Great Food</p>
                 <span>샌드위치 아티스트™는 <br>
                     언제나 완벽한 샌드위치를 만듭니다.</span>
             </div>
             <div class="icon">
                 <div class="gimg"><img src="img/store.png" alt=""></div>
-                <p>Great Store</p> 
+                <p>Great Store</p>
                 <span>샌드위치 아티스트™는 <br> 각종 재료의 신선함과
                     매장의 청결을 철저하게 관리합니다.</span>
             </div>
@@ -567,33 +561,29 @@
 
 
     <div class="video">
-        <a href=""></a>
+        <video src="video/subway.mp4" loop muted autoplay controls></video>
     </div>
 
     <div id="rrr">
-        <div class="review">
-            <span>Testimonial</span>
+
+        <div class="rbox">
             <h2>What Customers Say</h2>
         </div>
 
-        <div class="review2">
+        <div class="reviewbox">
+            <section></section>
+            <section></section>
         </div>
-        <div class="review2">
-        </div>
+    </div>
 
-        <div id="insta_box">
-            <div class="insta1"></div>
-            <div class="insta2"></div>
-            <div class="insta3"></div>
-            <div class="insta4"></div>
-        </div>
+    <div class="insta">
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
     </div>
-    </div>
-    <footer>
-        <div class="foot">
-        </div>
-        </div>
-    </footer>
+
+
 </body>
 
 </html>
