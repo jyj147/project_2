@@ -72,6 +72,10 @@
             opacity: 0.9;
         }
 
+        .button:hover{
+           color: #ffce32;   
+      }
+
         nav {
             width: 495.61px;
 
@@ -88,6 +92,9 @@
             color: #333;
         }
 
+        nav ul li a:hover{
+            color: #ffce32;
+        }
         nav ul a:hover {
             color: green;
         }
@@ -153,6 +160,10 @@
             color: #fff;
             position: absolute;
             bottom: 56px;
+        }
+
+        #slider button:hover{
+            color: #ffce32;
         }
 
         #slider .round {
@@ -247,7 +258,7 @@
 
 
         article button:hover {
-            color: #009223;
+            color :#ffce32
         }
 
         article {
@@ -399,10 +410,9 @@
 
 
 
-        #rrr {
-            background-color: #ffce32;
+        #rrr { 
             width: 1200px;
-            height: 659px;
+            height: 400px;
             margin: auto;
             display: flex;
             flex-wrap: wrap;
@@ -414,28 +424,35 @@
         .rbox {
             width: 63%;
             height: 12%;
-            background-color: aqua;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
             align-content: center;
-            margin-top: 0px;
+            margin-top: 48px;
             position: absolute;
         }
 
         .rbox h2 {
             text-align: center;
             font-size: 40px;
+            color: #009223;
         }
 
         .reviewbox section {
             width: 334px;
-            height: 378px;
-            background-color: #333;
+            height: 342px;
             float: left;
-            margin: 2px 35px 0px 36px;
+            margin: 53px 35px 0px 36px;
+            display: block;
+        }
+        .reviewbox h1{
+            text-align: center;
+            margin-top: 100px;
         }
 
+        .reviewbox img{
+            margin: 40px 0px -40px 0px;
+        }
         .insta {
             display: flex;
 
@@ -446,6 +463,16 @@
             height: 426px;
             background-color: aqua;
 
+        }
+
+        .foot {
+            background-color: honeydew;
+            width: 100%;
+            height: 764px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
         }
     </style>
 </head>
@@ -571,17 +598,29 @@
         </div>
 
         <div class="reviewbox">
-            <section></section>
-            <section></section>
+            <section> 
+                <h1>"신선하고 맛있어요. <br> 매우 만족 스럽습니다. <br> 다른 메뉴도 기대돼요. "</h1> 
+                <img src="img/boy.png" alt="">
+                <p>ID : **cd_123 고객님 </p>
+            </section>
+            <section>
+                <h1>"항상 친절하고 청결해요 <br>기분 좋게 즐거운 <br> 식사 했습니다. "</h1>
+                <img src="img/boy1.png" alt="">
+                <p>ID : a*b*_158 고객님</p>
+            </section>
         </div>
     </div>
 
     <div class="insta">
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section><img src="img/insta1.jpg" alt=""></section>
+        <section><img src="img/insta2.jpg" alt=""></section>
+        <section><img src="img/insta3.jpg" alt=""></section>
+        <section><img src="img/insta4.jpg" alt=""></section>
     </div>
+
+    <footer>
+        <div class="foot"></div>
+    </footer>
 
 
 </body>
