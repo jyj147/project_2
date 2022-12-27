@@ -218,9 +218,9 @@
             border-radius: 0 0 60px 0;}
         /* .slide li img {width: 100%; height: 100%;} */
 
-        #slidewrap span {position: absolute; top:50%; display: block; font-size: 38px; color:#fff; line-height: 40px;
+        #slidewrap span,#slidewrap2 span {position: absolute; top:50%; display: block; font-size: 38px; color:#fff; line-height: 40px;
         background: #009223; cursor: pointer; height: 50px; transform: translateY(-50%); }
-        #slidewrap span:hover {background: #ffce32; color:#000;}
+        #slidewrap span:hover,#slidewrap2 span:hover {background: #ffce32; color:#000;}
  
         .prev {left:0; border-radius: 0 10px 10px 0px; padding: 0 8px 0 2px;}
         .next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}
@@ -412,59 +412,72 @@
 
 
 
-        #rrr { 
-            width: 1200px;
-            height: 400px;
-            margin: auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-content: center;
-            position: relative;
-        }
-
-        .rbox {
-            width: 63%;
-            height: 12%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-content: center;
-            margin-top: 48px;
-            position: absolute;
-        }
+    
 
         .rbox h2 {
             text-align: center;
             font-size: 40px;
             color: #009223;
         }
-
-        .reviewbox section {
-            width: 334px;
+        #slidewrap2 {width: 1200px; height: 470px; margin: 50px auto; position: relative; overflow: hidden;}
+        .slide2{
+            width: 200%;
             height: 342px;
-            float: left;
-            margin: 53px 35px 0px 36px;
-            display: block;
         }
-        .reviewbox h1{
+        .slide2 li {
+            width: 50%;
+            height: 342px;
+            float: left;  
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .slide2 p{text-align: center;}
+
+        .review{
+            width: 45%;
+            height: 100%;
+        }
+
+        .slide2 h1{
             text-align: center;
             margin-top: 100px;
         }
 
-        .reviewbox img{
-            margin: 40px 0px -40px 0px;
+        .slide2 img{
+           margin: 39px 0px -35px 132px;
         }
+      
         .insta {
             display: flex;
-
         }
+
+    
 
         .insta section {
             width: 25%;
             height: 426px;
-            background-color: aqua;
+     
+            cursor: pointer;
+            position: relative;
+        }
 
+        .instalogo{
+           position: absolute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%);
+           display: none; 
+        }
+
+        .insta section:hover{
+            opacity: 0.7;  
+        }
+
+        .insta section:hover .instalogo{
+            display: block;
+            
         }
 
         .foot {
@@ -576,7 +589,7 @@
     
                 var page = 0;
     
-                $('.prev').click(function () {
+                $('#slidewrap .prev').click(function () {
     
                     page--;
     
@@ -590,7 +603,7 @@
     
                 });
     
-                $('.next').click(function () {
+                $('#slidewrap .next').click(function () {
     
                     page++;
     
@@ -607,30 +620,6 @@
             });
         </script>
         
-        <!-- <article>
-            <img src="img/eggmayo.jpg" alt="">
-            <h3>Eggmayo sandwich </h3>
-            <p>부드러운 달걀과 고소한 마요네즈가 만나 <br> 더 부드러운 스테디셀러</p>
-            <button>$20 Oder Now</button>
-        </article>
-        <article>
-            <img src="img/bmt.jpg" alt="">
-            <h3>Italian bmt sandwich </h3>
-            <p>페퍼로니, 살라미 그리고 햄이 만들어내는 최상의 조화! <br>
-                전세계가 사랑하는 써브웨이의 베스트셀러! <br> Biggest Meatiest Tastiest, its’ B.M.T.
-            </p>
-            <button>$20 Oder Now</button>
-        </article>
-        <article>
-            <img src="img/tuna.jpg" alt="">
-            <h3>Tuna sandwich</h3>
-            <p>남녀노소 누구나 좋아하는 담백한 참치와 <br>
-                고소한 마요네즈의 완벽한 조화</p>
-            <button>$20 Oder Now</button>
-        </article>
-
-        <span class="prev">&lt;</span>
-        <span class="next">&gt;</span> -->
 
     </section>
 
@@ -683,31 +672,92 @@
         <video src="video/subway.mp4" loop muted autoplay controls></video>
     </div>
 
-    <div id="rrr">
+    
+
+        <div id="slidewrap2">
+
+        <!-- <div id="rrr"> -->
 
         <div class="rbox">
             <h2>What Customers Say</h2>
         </div>
+            <ul class="slide2">
+                <li>
+                    <div class="review">            
+                        <h1>"신선하고 맛있어요. <br> 매우 만족 스럽습니다. <br> 다른 메뉴도 기대돼요. "</h1>
+                        <img src="img/boy.png" alt="">
+                        <p>ID : **cd_123 고객님 </p>
+                    </div>
+                    <div class="review">
+                        <h1>"항상 친절하고 청결해요 <br>기분 좋게 즐거운 <br> 식사 했습니다. "</h1>
+                        <img src="img/boy1.png" alt="">
+                        <p>ID : a*b*_158 고객님</p>
+                    </div>
+                </li>
 
-        <div class="reviewbox">
-            <section> 
-                <h1>"신선하고 맛있어요. <br> 매우 만족 스럽습니다. <br> 다른 메뉴도 기대돼요. "</h1> 
-                <img src="img/boy.png" alt="">
-                <p>ID : **cd_123 고객님 </p>
-            </section>
-            <section>
-                <h1>"항상 친절하고 청결해요 <br>기분 좋게 즐거운 <br> 식사 했습니다. "</h1>
-                <img src="img/boy1.png" alt="">
-                <p>ID : a*b*_158 고객님</p>
-            </section>
+                <li>
+                    <div class="review">            
+                        <h1>"간단하게 끼니 해결하기에 <br> 맛있고 좋아요."</h1>
+                        <img src="img/boy.png" alt="">
+                        <p>ID : uy*j_476 고객님 </p>
+                    </div>
+                    <div class="review">
+                        <h1>"샐러드와 쿠키가 <br>맛집이네요."</h1>
+                        <img src="img/boy1.png" alt="">
+                        <p>ID : b*ng 고객님</p>
+                    </div>
+                </li>
+            
+            
+            </ul>
+    
+    
+            <span class="prev">&lt;</span>
+            <span class="next">&gt;</span>
+    
         </div>
-    </div>
+    
+        <script>
+            $(function () {
 
+                $('#slidewrap2 .prev').click(function () {
+                    $('.slide2 li:last').prependTo('.slide2');
+                    $('.slide2').css('margin-left', '-100%');
+                    $('.slide2').stop().animate({ marginLeft: 0 }, 800);
+                });
+
+                $('#slidewrap2 .next').click(function () {
+                    $('.slide2').stop().animate({ marginLeft: '-100%'}, 800, function () {
+                        $('.slide2 li:first').appendTo('.slide2');
+                        $('.slide2').css({ marginLeft: 0 });
+                    });
+                });
+
+            });
+        </script>
+        
+       
     <div class="insta">
-        <section><img src="img/insta1.jpg" alt=""></section>
-        <section><img src="img/insta2.jpg" alt=""></section>
-        <section><img src="img/insta3.jpg" alt=""></section>
-        <section><img src="img/insta4.jpg" alt=""></section>
+        <section>
+            <img src="img/insta1.jpg" alt="">
+            <a href="index.html"></a>
+           <div class="instalogo"><img src="img/instalogo.png" alt=""></div>
+        </section>
+        <section>
+            <img src="img/insta2.jpg" alt="">
+            <a href="index.html"></a>
+            <div class="instalogo"><img src="img/instalogo.png" alt=""></div>
+        </section>
+        <section>
+            <img src="img/insta3.jpg" alt="">
+            <a href="index.html"></a>
+            <div class="instalogo"><img src="img/instalogo.png" alt=""></div>
+        </section>
+        <section>
+            <img src="img/insta4.jpg" alt="">
+            <a href="index.html"></a>
+            <div class="instalogo"><img src="img/instalogo.png" alt=""></div>
+        </section>
     </div>
 
     <footer>
