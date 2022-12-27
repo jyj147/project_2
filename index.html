@@ -176,8 +176,6 @@
             background-image: url(img/slider.jpg);
         }
 
-
-
         section {
             width: 1200px;
             height: 836px;
@@ -203,6 +201,76 @@
             font-weight: bold;
             color: #ffce32;
             text-align: center;
+
+        }
+
+        /* 버튼슬라이드 */
+        #slidewrap {width: 1180px; height: 470px; margin: 50px auto; position: relative; overflow: hidden;}
+        .slide {width: 2000px; margin-left:0px;}        
+        .slide li {width: 380px;
+            height: 100%;
+            float: left;
+
+            background-color: #ffce32;
+            background: rgb(199, 250, 189);
+            padding: 20px;
+            margin-right: 20px;
+            border-radius: 0 0 60px 0;}
+        /* .slide li img {width: 100%; height: 100%;} */
+
+        #slidewrap span {position: absolute; top:50%; display: block; font-size: 38px; color:#fff; line-height: 40px;
+        background: #009223; cursor: pointer; height: 50px; transform: translateY(-50%); }
+        #slidewrap span:hover {background: #ffce32; color:#000;}
+ 
+        .prev {left:0; border-radius: 0 10px 10px 0px; padding: 0 8px 0 2px;}
+        .next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}
+
+        .slide li button {
+            /* margin: 0; */
+            font-size: 25px;
+            width: 170px;
+            height: 50px;
+            text-align: center;
+            border: solid#009223 3px;
+            border-radius: 30px;
+            background-color: #fff;
+            width: 100%;
+            height: 14%;
+            flex-wrap: revert;
+            float: left;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+
+        .slide li button:hover {
+            color :#ffce32
+        }
+
+        section .slide li img {
+            display: inline-block;
+            width: 100%;
+            border-radius: 0 0 60px 0;
+        }
+
+        section .slide li h3 {
+            text-align: center;
+            height: 50px;
+        }
+
+        section .slide li p {
+            height: 60px;
+        }
+
+        section h1 {
+            text-align: center;
+        }
+
+
+
+        section p {
+            text-align: center;
+            font-size: 15px;
 
         }
 
@@ -238,72 +306,6 @@
         .container button:hover {
             color: #ffce32;
         }
-
-        article button {
-            /* margin: 0; */
-            font-size: 25px;
-            width: 170px;
-            height: 50px;
-            text-align: center;
-            border: solid#009223 3px;
-            border-radius: 30px;
-            background-color: #fff;
-            width: 100%;
-            height: 14%;
-            flex-wrap: revert;
-            float: left;
-            align-items: center;
-            margin-top: 30px;
-        }
-
-
-        article button:hover {
-            color :#ffce32
-        }
-
-        article {
-            width: 360px;
-            height: 432px;
-            float: left;
-
-            background-color: #ffce32;
-            background: rgb(199, 250, 189);
-            padding: 20px;
-            border-radius: 0 0 60px 0;
-
-
-
-        }
-
-
-
-        section article img {
-            display: inline-block;
-            width: 100%;
-            border-radius: 0 0 60px 0;
-        }
-
-        section article h3 {
-            text-align: center;
-            height: 50px;
-        }
-
-        section article p {
-            height: 60px;
-        }
-
-        section h1 {
-            text-align: center;
-        }
-
-
-
-        section p {
-            text-align: center;
-            font-size: 15px;
-
-        }
-
 
         #dongle {
             width: 1200px;
@@ -475,6 +477,7 @@
             position: relative;
         }
     </style>
+     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -520,7 +523,91 @@
             <p>Most Popular</p>
             <h1>Our Exclusive Sandwich</h1>
         </div>
-        <article>
+
+        <div id="slidewrap">
+
+            <ul class="slide">
+                <li>
+                    <img src="img/eggmayo.jpg" alt="">
+                    <h3>Eggmayo sandwich </h3>
+                    <p>부드러운 달걀과 고소한 마요네즈가 만나 <br> 더 부드러운 스테디셀러</p>
+                    <button>$20 Oder Now</button>
+                </li>
+                <li>
+                    <img src="img/bmt.jpg" alt="">
+                    <h3>Italian bmt sandwich </h3>
+                    <p>페퍼로니, 살라미 그리고 햄이 만들어내는 최상의 조화! <br>
+                        전세계가 사랑하는 써브웨이의 베스트셀러! <br> Biggest Meatiest Tastiest, its’ B.M.T.
+                    </p>
+                    <button>$20 Oder Now</button>
+                </li>
+                <li>
+                    <img src="img/tuna.jpg" alt="">
+                    <h3>Tuna sandwich</h3>
+                    <p>남녀노소 누구나 좋아하는 담백한 참치와 <br>
+                        고소한 마요네즈의 완벽한 조화</p>
+                    <button>$20 Oder Now</button>
+                </li>
+                <li>
+                    <img src="img/blt.jpg" alt="">
+                    <h3>BLT Sandwich </h3>
+                    <p>짭쪼름한 베이컨과 신선한 양상추의 조화<br> 누구에게나 입맛 저격!</p>
+                    <button>$20 Oder Now</button>
+                </li>
+                <li>
+                    <img src="img/ham.jpg" alt="">
+                    <h3>Ham Sandwich </h3>
+                    <p>부드럽고 두툼한 햄 샌드위치<br>
+                        모든 소스에 어울려요. 
+                    </p>
+                    <button>$20 Oder Now</button>
+                </li>
+            
+            </ul>
+    
+    
+            <span class="prev">&lt;</span>
+            <span class="next">&gt;</span>
+    
+        </div>
+    
+        <script>
+            $(function(){
+    
+                var page = 0;
+    
+                $('.prev').click(function () {
+    
+                    page--;
+    
+                    if (page < 0) {
+                        page = 0;
+                        alert('첫번째 이미지');
+                        return;
+                    }
+    
+                    $('.slide').stop().animate({ marginLeft: -400 * page }, 800);
+    
+                });
+    
+                $('.next').click(function () {
+    
+                    page++;
+    
+                    if (page > $('.slide li').length-3) {
+                        page = $('.slide li').length-3;
+                        alert('마지막 이미지');
+                        return;
+                    }
+    
+                    $('.slide').stop().animate({ marginLeft: -400 * page }, 800);
+                });
+    
+             
+            });
+        </script>
+        
+        <!-- <article>
             <img src="img/eggmayo.jpg" alt="">
             <h3>Eggmayo sandwich </h3>
             <p>부드러운 달걀과 고소한 마요네즈가 만나 <br> 더 부드러운 스테디셀러</p>
@@ -542,7 +629,12 @@
             <button>$20 Oder Now</button>
         </article>
 
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span> -->
+
     </section>
+
+    
 
     <div id="dongle">
         <div class="box"></div>
