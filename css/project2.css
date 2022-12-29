@@ -1,0 +1,430 @@
+@charset "utf-8";
+
+#slider {
+    width: 100%;
+    height: 820px;
+    background-color: #009223;
+    opacity: 0.8;
+    padding-top: 220px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+#slider>.content {
+    width: 1200px;
+    height: 380px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#slider .content h2 {
+    font-family: 'Lobster', cursive;
+    font-size: 130px;
+    color: #ffce32;
+    opacity: 0.7;
+    position: absolute;
+    top: -49px;
+    left: -18px;
+}
+
+#slider .content h1 {
+    position: absolute;
+    top: 37px;
+    left: 0;
+    font-size: 80px;
+    color: #ffce32;
+    line-height: 80px;
+}
+
+#slider .content span {
+    font-size: 50px;
+    color: #fff;
+}
+
+#slider img {
+    position: relative;
+}
+
+#slider button {
+    color: #333;
+    width: 188px;
+    height: 60px;
+    font-size: 30px;
+    float: left;
+    text-align: center;
+    border: solid #fff 3px;
+    border-radius: 30px;
+    background-color: #009223;
+    color: #fff;
+    position: absolute;
+    bottom: 56px;
+}
+
+#slider button:hover {
+    color: #ffce32;
+}
+
+#slider .round {
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    position: absolute;
+    top: -180px;
+    right: -180px;
+    background-image: url(../img/slider.jpg);
+}
+
+section {
+    width: 1200px;
+    height: 836px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+section .popular {
+    width: 100%;
+    height: 20%;
+
+}
+
+.popular h1 {
+    font-size: 50px;
+}
+
+.popular p {
+    font-size: 57px;
+    font-weight: bold;
+    color: #ffce32;
+    text-align: center;
+
+}
+
+/* 버튼슬라이드 */
+#slidewrap {
+    width: 1180px;
+    height: 470px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 2000px;
+    margin-left: 0px;
+}
+
+.slide li {
+    width: 380px;
+    height: 100%;
+    float: left;
+
+    background-color: #ffce32;
+    background: rgb(199, 250, 189);
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 0 0 60px 0;
+}
+
+/* .slide li img {width: 100%; height: 100%;} */
+
+#slidewrap span,
+#slidewrap2 span {
+    position: absolute;
+    top: 50%;
+    display: block;
+    font-size: 38px;
+    color: #fff;
+    line-height: 40px;
+    background: #009223;
+    cursor: pointer;
+    height: 50px;
+    transform: translateY(-50%);
+}
+
+#slidewrap span:hover,
+#slidewrap2 span:hover {
+    background: #ffce32;
+    color: #000;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 10px 10px 0px;
+    padding: 0 8px 0 2px;
+}
+
+.next {
+    right: 0;
+    border-radius: 10px 0px 0px 10px;
+    padding: 0 2px 0 8px;
+}
+
+.slide li button {
+    /* margin: 0; */
+    font-size: 25px;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    border: solid#009223 3px;
+    border-radius: 30px;
+    background-color: #fff;
+    width: 100%;
+    height: 14%;
+    flex-wrap: revert;
+    float: left;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.slide li button:hover {
+    color: #ffce32
+}
+
+section .slide li img {
+    display: inline-block;
+    width: 100%;
+    border-radius: 0 0 60px 0;
+}
+
+section .slide li h3 {
+    text-align: center;
+    height: 50px;
+}
+
+section .slide li p {
+    height: 60px;
+}
+
+section h1 {
+    text-align: center;
+}
+
+
+
+section p {
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.container {
+    text-align: center;
+    float: left;
+
+}
+
+.container p {
+    font-size: 40px;
+}
+
+.container h2 {
+    font-size: 40px;
+}
+
+.container span {
+    font-size: 16px;
+}
+
+.container button {
+    font-size: 25px;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+
+    border: solid#009223 3px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+
+.container button:hover {
+    color: #ffce32;
+}
+
+#dongle {
+    width: 1200px;
+    height: 614px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.box {
+    background-image: url(../img/circle_sandwich1.png);
+    width: 570px;
+    height: 504.08px;
+
+}
+
+.explain {
+    background-color: honeydew;
+    width: 100%;
+    height: 764px;
+
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.onion_icon {
+    width: 487px;
+    height: 261px;
+    background-image: url(../img/onion.png);
+    position: absolute;
+    top: -260px;
+    right: 0px;
+}
+
+.explain1 {
+    width: 1200px;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.explain1 p {
+    color: #009223;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.explain1 h2 {
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.gimg {
+    width: 118px;
+    height: 118px;
+
+    margin-top: -125px;
+}
+
+.icon {
+    width: 30%;
+    height: 50%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.icon p {
+    color: #009223;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    height: 64px;
+}
+
+.icon span {
+    text-align: center;
+    font-size: 15px;
+    height: 0px;
+
+}
+
+.video video {
+
+    width: 100%;
+    height: 600px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+
+
+.rbox h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #009223;
+}
+
+#slidewrap2 {
+    width: 1200px;
+    height: 470px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide2 {
+    width: 200%;
+    height: 342px;
+}
+
+.slide2 li {
+    width: 50%;
+    height: 342px;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slide2 p {
+    text-align: center;
+}
+
+.review {
+    width: 45%;
+    height: 100%;
+}
+
+.slide2 h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.slide2 img {
+    margin: 39px 0px -35px 132px;
+}
+
+.insta {
+    display: flex;
+}
+
+
+
+.insta section {
+    width: 25%;
+    height: 426px;
+
+    cursor: pointer;
+    position: relative;
+}
+
+.instalogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.insta section:hover {
+    opacity: 0.7;
+}
+
+.insta section:hover .instalogo {
+    display: block;
+
+}
