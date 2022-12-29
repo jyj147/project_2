@@ -72,9 +72,9 @@
             opacity: 0.9;
         }
 
-        .button:hover{
-           color: #ffce32;   
-      }
+        .button:hover {
+            color: #ffce32;
+        }
 
         nav {
             width: 495.61px;
@@ -92,9 +92,10 @@
             color: #333;
         }
 
-        nav ul li a:hover{
+        nav ul li a:hover {
             color: #ffce32;
         }
+
         nav ul a:hover {
             color: green;
         }
@@ -162,7 +163,7 @@
             bottom: 56px;
         }
 
-        #slider button:hover{
+        #slider button:hover {
             color: #ffce32;
         }
 
@@ -205,9 +206,21 @@
         }
 
         /* 버튼슬라이드 */
-        #slidewrap {width: 1180px; height: 470px; margin: 50px auto; position: relative; overflow: hidden;}
-        .slide {width: 2000px; margin-left:0px;}        
-        .slide li {width: 380px;
+        #slidewrap {
+            width: 1180px;
+            height: 470px;
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide {
+            width: 2000px;
+            margin-left: 0px;
+        }
+
+        .slide li {
+            width: 380px;
             height: 100%;
             float: left;
 
@@ -215,15 +228,42 @@
             background: rgb(199, 250, 189);
             padding: 20px;
             margin-right: 20px;
-            border-radius: 0 0 60px 0;}
+            border-radius: 0 0 60px 0;
+        }
+
         /* .slide li img {width: 100%; height: 100%;} */
 
-        #slidewrap span,#slidewrap2 span {position: absolute; top:50%; display: block; font-size: 38px; color:#fff; line-height: 40px;
-        background: #009223; cursor: pointer; height: 50px; transform: translateY(-50%); }
-        #slidewrap span:hover,#slidewrap2 span:hover {background: #ffce32; color:#000;}
- 
-        .prev {left:0; border-radius: 0 10px 10px 0px; padding: 0 8px 0 2px;}
-        .next {right:0; border-radius: 10px 0px 0px 10px; padding: 0 2px 0 8px;}
+        #slidewrap span,
+        #slidewrap2 span {
+            position: absolute;
+            top: 50%;
+            display: block;
+            font-size: 38px;
+            color: #fff;
+            line-height: 40px;
+            background: #009223;
+            cursor: pointer;
+            height: 50px;
+            transform: translateY(-50%);
+        }
+
+        #slidewrap span:hover,
+        #slidewrap2 span:hover {
+            background: #ffce32;
+            color: #000;
+        }
+
+        .prev {
+            left: 0;
+            border-radius: 0 10px 10px 0px;
+            padding: 0 8px 0 2px;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 10px 0px 0px 10px;
+            padding: 0 2px 0 8px;
+        }
 
         .slide li button {
             /* margin: 0; */
@@ -244,7 +284,7 @@
 
 
         .slide li button:hover {
-            color :#ffce32
+            color: #ffce32
         }
 
         section .slide li img {
@@ -412,85 +452,197 @@
 
 
 
-    
+
 
         .rbox h2 {
             text-align: center;
             font-size: 40px;
             color: #009223;
         }
-        #slidewrap2 {width: 1200px; height: 470px; margin: 50px auto; position: relative; overflow: hidden;}
-        .slide2{
+
+        #slidewrap2 {
+            width: 1200px;
+            height: 470px;
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide2 {
             width: 200%;
             height: 342px;
         }
+
         .slide2 li {
             width: 50%;
             height: 342px;
-            float: left;  
+            float: left;
             display: flex;
             justify-content: space-around;
             align-items: center;
         }
 
-        .slide2 p{text-align: center;}
+        .slide2 p {
+            text-align: center;
+        }
 
-        .review{
+        .review {
             width: 45%;
             height: 100%;
         }
 
-        .slide2 h1{
+        .slide2 h1 {
             text-align: center;
             margin-top: 100px;
         }
 
-        .slide2 img{
-           margin: 39px 0px -35px 132px;
+        .slide2 img {
+            margin: 39px 0px -35px 132px;
         }
-      
+
         .insta {
             display: flex;
         }
 
-    
+
 
         .insta section {
             width: 25%;
             height: 426px;
-     
+
             cursor: pointer;
             position: relative;
         }
 
-        .instalogo{
-           position: absolute;
-           top: 50%;
-           left: 50%;
-           transform: translate(-50%, -50%);
-           display: none; 
+        .instalogo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
         }
 
-        .insta section:hover{
-            opacity: 0.7;  
+        .insta section:hover {
+            opacity: 0.7;
         }
 
-        .insta section:hover .instalogo{
+        .insta section:hover .instalogo {
             display: block;
-            
+
         }
 
         .foot {
             background-color: honeydew;
             width: 100%;
-            height: 764px;
+            height: 434px;
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
         }
+
+        .fb {
+            width: 400px;
+            height: 294px;
+            position: absolute;
+            top: 18%;
+            left:  17.4%;
+        }
+
+        .fbimg {
+            background-image: url(img/main_logo2.png);
+            width: 134px;
+            height: 50px;
+            margin-top: 35px;
+            margin-left: 13px;
+        }
+
+        .fb p {
+            margin-top: 25px;
+            margin-left: 15px;
+        }
+
+        .fbsocial {
+            width: 370px;
+            height: 51px;
+            margin-top: 25px;
+        }
+
+        .twitter {
+            width: 27px;
+            height: 27px;
+            background-image: url(img/twitter.png);
+            position: absolute;
+            margin: 12px 0px 0px 16px;
+            cursor: pointer;
+        }
+
+        .facebook {
+            width: 27px;
+            height: 27px;
+            background-image: url(img/facebook.png);
+            position: absolute;
+            margin: 12px 0px 0px 68px;
+            cursor: pointer;
+        }
+
+        .in {
+            width: 27px;
+            height: 27px;
+            background-image: url(img/in.png);
+            position: absolute;
+            margin: 12px 0px 0px 117px;
+            cursor: pointer;
+        }
+
+        .fbtitle {
+            width: 200px;
+            height: 294px;
+            align-items: center;
+            margin: -233px 0px 0px 510px
+        }
+
+        .fbtitle h1 {
+            text-align: center;
+            margin-left: 15px;
+        }
+
+        .fbtitle p {
+            text-align: center;
+        }
+
+        .fbtitle2 {
+            width: 200px;
+            height: 249px;
+            margin: -296px 0px 0px 810px;
+        }
+
+        .fbtitle2 h1 {
+            text-align: center;
+            margin-left: 15px;
+        }
+
+        .fbtitle2 p {
+            text-align: center;
+            margin-left: 15px;
+        }
+
+        .fbtitle3 {
+            width: 356px;
+            height: 294px;
+            align-items: center;
+            margin: -255px 0px 0px 1121px;
+        }
+
+        .fbtitle3 h1 {
+            text-align: center;
+        }
+
+        .fbtitle3 p {
+            text-align: center;
+        }
     </style>
-     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -571,59 +723,59 @@
                     <img src="img/ham.jpg" alt="">
                     <h3>Ham Sandwich </h3>
                     <p>부드럽고 두툼한 햄 샌드위치<br>
-                        모든 소스에 어울려요. 
+                        모든 소스에 어울려요.
                     </p>
                     <button>$20 Oder Now</button>
                 </li>
-            
+
             </ul>
-    
-    
+
+
             <span class="prev">&lt;</span>
             <span class="next">&gt;</span>
-    
+
         </div>
-    
+
         <script>
-            $(function(){
-    
+            $(function () {
+
                 var page = 0;
-    
+
                 $('#slidewrap .prev').click(function () {
-    
+
                     page--;
-    
+
                     if (page < 0) {
                         page = 0;
                         alert('첫번째 이미지');
                         return;
                     }
-    
+
                     $('.slide').stop().animate({ marginLeft: -400 * page }, 800);
-    
+
                 });
-    
+
                 $('#slidewrap .next').click(function () {
-    
+
                     page++;
-    
-                    if (page > $('.slide li').length-3) {
-                        page = $('.slide li').length-3;
+
+                    if (page > $('.slide li').length - 3) {
+                        page = $('.slide li').length - 3;
                         alert('마지막 이미지');
                         return;
                     }
-    
+
                     $('.slide').stop().animate({ marginLeft: -400 * page }, 800);
                 });
-    
-             
+
+
             });
         </script>
-        
+
 
     </section>
 
-    
+
 
     <div id="dongle">
         <div class="box"></div>
@@ -672,76 +824,76 @@
         <video src="video/subway.mp4" loop muted autoplay controls></video>
     </div>
 
-    
 
-        <div id="slidewrap2">
+
+    <div id="slidewrap2">
 
         <!-- <div id="rrr"> -->
 
         <div class="rbox">
             <h2>What Customers Say</h2>
         </div>
-            <ul class="slide2">
-                <li>
-                    <div class="review">            
-                        <h1>"신선하고 맛있어요. <br> 매우 만족 스럽습니다. <br> 다른 메뉴도 기대돼요. "</h1>
-                        <img src="img/boy.png" alt="">
-                        <p>ID : **cd_123 고객님 </p>
-                    </div>
-                    <div class="review">
-                        <h1>"항상 친절하고 청결해요 <br>기분 좋게 즐거운 <br> 식사 했습니다. "</h1>
-                        <img src="img/boy1.png" alt="">
-                        <p>ID : a*b*_158 고객님</p>
-                    </div>
-                </li>
+        <ul class="slide2">
+            <li>
+                <div class="review">
+                    <h1>"신선하고 맛있어요. <br> 매우 만족 스럽습니다. <br> 다른 메뉴도 기대돼요. "</h1>
+                    <img src="img/boy.png" alt="">
+                    <p>ID : **cd_123 고객님 </p>
+                </div>
+                <div class="review">
+                    <h1>"항상 친절하고 청결해요 <br>기분 좋게 즐거운 <br> 식사 했습니다. "</h1>
+                    <img src="img/boy1.png" alt="">
+                    <p>ID : a*b*_158 고객님</p>
+                </div>
+            </li>
 
-                <li>
-                    <div class="review">            
-                        <h1>"간단하게 끼니 해결하기에 <br> 맛있고 좋아요."</h1>
-                        <img src="img/boy.png" alt="">
-                        <p>ID : uy*j_476 고객님 </p>
-                    </div>
-                    <div class="review">
-                        <h1>"샐러드와 쿠키가 <br>맛집이네요."</h1>
-                        <img src="img/boy1.png" alt="">
-                        <p>ID : b*ng 고객님</p>
-                    </div>
-                </li>
-            
-            
-            </ul>
-    
-    
-            <span class="prev">&lt;</span>
-            <span class="next">&gt;</span>
-    
-        </div>
-    
-        <script>
-            $(function () {
+            <li>
+                <div class="review">
+                    <h1>"간단하게 끼니 해결하기에 <br> 맛있고 좋아요."</h1>
+                    <img src="img/boy.png" alt="">
+                    <p>ID : uy*j_476 고객님 </p>
+                </div>
+                <div class="review">
+                    <h1>"샐러드와 쿠키가 <br>맛집이네요."</h1>
+                    <img src="img/boy1.png" alt="">
+                    <p>ID : b*ng 고객님</p>
+                </div>
+            </li>
 
-                $('#slidewrap2 .prev').click(function () {
-                    $('.slide2 li:last').prependTo('.slide2');
-                    $('.slide2').css('margin-left', '-100%');
-                    $('.slide2').stop().animate({ marginLeft: 0 }, 800);
-                });
 
-                $('#slidewrap2 .next').click(function () {
-                    $('.slide2').stop().animate({ marginLeft: '-100%'}, 800, function () {
-                        $('.slide2 li:first').appendTo('.slide2');
-                        $('.slide2').css({ marginLeft: 0 });
-                    });
-                });
+        </ul>
 
+
+        <span class="prev">&lt;</span>
+        <span class="next">&gt;</span>
+
+    </div>
+
+    <script>
+        $(function () {
+
+            $('#slidewrap2 .prev').click(function () {
+                $('.slide2 li:last').prependTo('.slide2');
+                $('.slide2').css('margin-left', '-100%');
+                $('.slide2').stop().animate({ marginLeft: 0 }, 800);
             });
-        </script>
-        
-       
+
+            $('#slidewrap2 .next').click(function () {
+                $('.slide2').stop().animate({ marginLeft: '-100%' }, 800, function () {
+                    $('.slide2 li:first').appendTo('.slide2');
+                    $('.slide2').css({ marginLeft: 0 });
+                });
+            });
+
+        });
+    </script>
+
+
     <div class="insta">
         <section>
             <img src="img/insta1.jpg" alt="">
             <a href="index.html"></a>
-           <div class="instalogo"><img src="img/instalogo.png" alt=""></div>
+            <div class="instalogo"><img src="img/instalogo.png" alt=""></div>
         </section>
         <section>
             <img src="img/insta2.jpg" alt="">
@@ -761,7 +913,41 @@
     </div>
 
     <footer>
-        <div class="foot"></div>
+        <div class="foot">
+            <div class="fb">
+                <div class="fbimg"></div>
+                <p>Subway®를 찾아 주신 고객님께 감사드립니다.
+                    SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                <div class="fbsocial">
+                    <div class="twitter"><a href=""></a></div>
+                    <div class="facebook"><a href="https://www.facebook.com/Subwaykr"></a></div>
+                    <div class="in"><a href=""></a></div>
+                </div>
+                <div class="fbtitle">
+                    <h1>Quick Links</h1>
+                    <p>Home</p>
+                    <p>About</p>
+                    <p>Services</p>
+                    <p>Blog</p>
+                    <p>Contact</p>
+                </div>
+                <div class="fbtitle2">
+                    <h1>Menu</h1>
+                    <p>Sandwich</p>
+                    <p>Wrap/ect</p>
+                    <p>Salad</p>
+                    <p>Side</p>
+                </div>
+                <div class="fbtitle3">
+                    <h1>Contact Us</h1>
+                    <p>서울시 서초구 강남대로 535 프린스빌딩 15층</p>
+                    <p>전화 : 02-797-5034</p>
+                    <p>대표 : INSOO CHO(인수조)</p>
+                    <p>사업자등록번호 : 101-84-04143</p>
+                </div>
+            </div>
+        </div>
+        </div>
     </footer>
 
 
