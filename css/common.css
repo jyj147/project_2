@@ -1,4 +1,4 @@
-@charset "utf-8";   
+@charset "utf-8";
 
 * {
     margin: 0;
@@ -15,183 +15,568 @@ li,
 ol {
     list-style: none;
 }
-/* header */
-header {
-    width: 1200px;
-    height: 100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-}
-#logo {
-    width: 118px;
-    height: 44px;
-    background-image: url(../img/main_logo.jpg);
+
+@media all and (max-width :599px) {
+
+    /* header */
+    header {
+        width: 1200px;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    #logo {
+        width: 118px;
+        height: 44px;
+        background-image: url(../img/main_logo.jpg);
+    }
+
+    .tell {
+        width: 149px;
+        height: 20px;
+    }
+
+    .tell i {
+        color: #009223;
+        font-size: 20px;
+    }
+
+    .tell i:hover {
+        color: #ffce32;
+    }
+
+    .button {
+        width: 169px;
+        height: 34px;
+        background-color: #fff;
+        border: solid 3px #009223;
+        border-radius: 20px;
+        color: #333;
+        font-size: 20px;
+        text-align: center;
+        opacity: 0.9;
+    }
+
+    .button:hover {
+        color: #ffce32;
+    }
+
+    nav {
+        width: 495.61px;
+
+        text-align: center;
+    }
+
+    nav ul li {
+        float: left;
+        padding: 0px 26px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    nav ul li a:hover {
+        color: #ffce32;
+    }
+
+    nav ul a:hover {
+        color: green;
+    }
+
+    /* footer */
+    footer{
+        width: 100%;
+        display: flex;
+        position: relative;
+    }
+    .foot {
+        background-color: honeydew;
+        width: 1200px;
+        height: 434px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        align-items: center;
+
+    }
+
+    .fb {
+        width: 400px;
+        height: 294px;
+        position: absolute;
+        top: 18%;
+        left: 17.4%;
+    }
+
+    .fbimg {
+        background-image: url(../img/main_logo2.png);
+        width: 134px;
+        height: 50px;
+        margin-top: 35px;
+        margin-left: 13px;
+    }
+
+    .fb p {
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+
+    .fbsocial {
+        width: 370px;
+        height: 51px;
+        margin-top: 25px;
+    }
+
+    .twitter {
+        width: 27px;
+        height: 27px;
+        background-image: url(../img/twitter.png);
+        position: absolute;
+        margin: 12px 0px 0px 16px;
+        cursor: pointer;
+    }
+
+    .facebook {
+        width: 27px;
+        height: 27px;
+        background-image: url(../img/twitter.png);
+        position: absolute;
+        margin: 12px 0px 0px 68px;
+        cursor: pointer;
+    }
+
+    .in {
+        width: 27px;
+        height: 27px;
+        background-image: url(../img/in.png);
+        position: absolute;
+        margin: 12px 0px 0px 117px;
+        cursor: pointer;
+    }
+
+    .fbtitle {
+        width: 200px;
+        height: 294px;
+        align-items: center;
+        margin: -233px 0px 0px 510px
+    }
+
+    .fbtitle h1 {
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .fbtitle p {
+        text-align: center;
+    }
+
+    .fbtitle2 {
+        width: 200px;
+        height: 249px;
+        margin: -296px 0px 0px 810px;
+    }
+
+    .fbtitle2 h1 {
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .fbtitle2 p {
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .fbtitle3 {
+        width: 356px;
+        height: 294px;
+        align-items: center;
+        margin: -255px 0px 0px 1121px;
+    }
+
+    .fbtitle3 h1 {
+        text-align: center;
+    }
+
+    .fbtitle3 p {
+        text-align: center;
+    }
 }
 
-.tell {
-    width: 149px;
-    height: 20px;
+@media all and (min-width :600px) and (max-width :1199px) {
+
+    /* header */
+    header {
+        width: 1200px;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    #logo {
+        width: 118px;
+        height: 44px;
+        background-image: url(../img/main_logo.jpg);
+    }
+
+    .tell {
+        width: 149px;
+        height: 20px;
+    }
+
+    .tell i {
+        color: #009223;
+        font-size: 20px;
+    }
+
+    .tell i:hover {
+        color: #ffce32;
+    }
+
+    .button {
+        width: 169px;
+        height: 34px;
+        background-color: #fff;
+        border: solid 3px #009223;
+        border-radius: 20px;
+        color: #333;
+        font-size: 20px;
+        text-align: center;
+        opacity: 0.9;
+    }
+
+    .button:hover {
+        color: #ffce32;
+    }
+
+    nav {
+        width: 495.61px;
+
+        text-align: center;
+    }
+
+    nav ul li {
+        float: left;
+        padding: 0px 26px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    nav ul li a:hover {
+        color: #ffce32;
+    }
+
+    nav ul a:hover {
+        color: green;
+    }
+
+    /* footer */
+    .foot {
+        background-color: honeydew;
+        width: 100%;
+        height: 434px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .fb {
+        width: 400px;
+        height: 294px;
+        position: absolute;
+        top: 18%;
+        left: 17.4%;
+    }
+
+    .fbimg {
+        background-image: url(../img/main_logo2.png);
+        width: 134px;
+        height: 50px;
+        margin-top: 35px;
+        margin-left: 13px;
+    }
+
+    .fb p {
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+
+    .fbsocial {
+        width: 370px;
+        height: 51px;
+        margin-top: 25px;
+    }
+
+    .twitter {
+        width: 27px;
+        height: 27px;
+        background-image: url(../img/twitter.png);
+        position: absolute;
+        margin: 12px 0px 0px 16px;
+        cursor: pointer;
+    }
+
+    .facebook {
+        width: 27px;
+        height: 27px;
+        background-image: url(../img/twitter.png);
+        position: absolute;
+        margin: 12px 0px 0px 68px;
+        cursor: pointer;
+    }
+
+    .in {
+        width: 27px;
+        height: 27px;
+        background-image: url(../img/in.png);
+        position: absolute;
+        margin: 12px 0px 0px 117px;
+        cursor: pointer;
+    }
+
+    .fbtitle {
+        width: 200px;
+        height: 294px;
+        align-items: center;
+        margin: -233px 0px 0px 510px
+    }
+
+    .fbtitle h1 {
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .fbtitle p {
+        text-align: center;
+    }
+
+    .fbtitle2 {
+        width: 200px;
+        height: 249px;
+        margin: -296px 0px 0px 810px;
+    }
+
+    .fbtitle2 h1 {
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .fbtitle2 p {
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .fbtitle3 {
+        width: 356px;
+        height: 294px;
+        align-items: center;
+        margin: -255px 0px 0px 1121px;
+    }
+
+    .fbtitle3 h1 {
+        text-align: center;
+    }
+
+    .fbtitle3 p {
+        text-align: center;
+    }
 }
 
-.tell i {
-    color: #009223;
-    font-size: 20px;
-}
+@media all and (min-width :1200px) {
 
-.tell i:hover {
-    color: #ffce32;
-}
+    /* header */
+    header {
+        width: 1200px;
+        height: 100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-.button {
-    width: 169px;
-    height: 34px;
-    background-color: #fff;
-    border: solid 3px #009223;
-    border-radius: 20px;
-    color: #333;
-    font-size: 20px;
-    text-align: center;
-    opacity: 0.9;
-}
+    }
 
-.button:hover {
-    color: #ffce32;
-}
+    #logo {
+        width: 118px;
+        height: 44px;
+        background-image: url(../img/main_logo.jpg);
+    }
 
-nav {
-    width: 495.61px;
+    .tell {
+        width: 149px;
+        height: 20px;
+    }
 
-    text-align: center;
-}
+    .tell i {
+        color: #009223;
+        font-size: 20px;
+    }
 
-nav ul li {
-    float: left;
-    padding: 0px 26px;
-}
+    .tell i:hover {
+        color: #ffce32;
+    }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-}
+    .button {
+        width: 169px;
+        height: 34px;
+        background-color: #fff;
+        border: solid 3px #009223;
+        border-radius: 20px;
+        color: #333;
+        font-size: 20px;
+        text-align: center;
+        opacity: 0.9;
+    }
 
-nav ul li a:hover {
-    color: #ffce32;
-}
+    .button:hover {
+        color: #ffce32;
+    }
 
-nav ul a:hover {
-    color: green;
-}
-/* footer */
-.foot {
-    background-color: honeydew;
-    width: 100%;
-    height: 434px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
+    nav {
+        width: 495.61px;
 
-.fb {
-    width: 400px;
-    height: 294px;
-    position: absolute;
-    top: 18%;
-    left:  17.4%;
-}
+        text-align: center;
+    }
 
-.fbimg {
-    background-image: url(../img/main_logo2.png);
-    width: 134px;
-    height: 50px;
-    margin-top: 35px;
-    margin-left: 13px;
-}
+    nav ul li {
+        float: left;
+        padding: 0px 26px;
+    }
 
-.fb p {
-    margin-top: 25px;
-    margin-left: 15px;
-}
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+    }
 
-.fbsocial {
-    width: 370px;
-    height: 51px;
-    margin-top: 25px;
-}
+    nav ul li a:hover {
+        color: #ffce32;
+    }
 
-.twitter {
-    width: 27px;
-    height: 27px;
-    background-image: url(../img/twitter.png);
-    position: absolute;
-    margin: 12px 0px 0px 16px;
-    cursor: pointer;
-}
+    nav ul a:hover {
+        color: green;
+    }
 
-.facebook {
-    width: 27px;
-    height: 27px;
-    background-image: url(../img/twitter.png);
-    position: absolute;
-    margin: 12px 0px 0px 68px;
-    cursor: pointer;
-}
+    /* footer */
+    .foot {
+        background-color: honeydew;
+        width: 100%;
+        height: 434px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
 
-.in {
-    width: 27px;
-    height: 27px;
-    background-image: url(../img/in.png);
-    position: absolute;
-    margin: 12px 0px 0px 117px;
-    cursor: pointer;
-}
+    .fb {
+        width: 400px;
+        height: 294px;
+        position: absolute;
+        top: 18%;
+        left: 17.4%;
+    }
 
-.fbtitle {
-    width: 200px;
-    height: 294px;
-    align-items: center;
-    margin: -233px 0px 0px 510px
-}
+    .fbimg {
+        background-image: url(../img/main_logo2.png);
+        width: 134px;
+        height: 50px;
+        margin-top: 35px;
+        margin-left: 13px;
+    }
 
-.fbtitle h1 {
-    text-align: center;
-    margin-left: 15px;
-}
+    .fb p {
+        margin-top: 25px;
+        margin-left: 15px;
+    }
 
-.fbtitle p {
-    text-align: center;
-}
+    .fbsocial {
+        width: 370px;
+        height: 51px;
+        margin-top: 25px;
+    }
 
-.fbtitle2 {
-    width: 200px;
-    height: 249px;
-    margin: -296px 0px 0px 810px;
-}
+    .twitter {
+        width: 27px;
+        height: 27px;
+        background-image: url(../img/twitter.png);
+        position: absolute;
+        margin: 12px 0px 0px 16px;
+        cursor: pointer;
+    }
 
-.fbtitle2 h1 {
-    text-align: center;
-    margin-left: 15px;
-}
+    .facebook {
+        width: 27px;
+        height: 27px;
+        background-image: url(../img/twitter.png);
+        position: absolute;
+        margin: 12px 0px 0px 68px;
+        cursor: pointer;
+    }
 
-.fbtitle2 p {
-    text-align: center;
-    margin-left: 15px;
-}
+    .in {
+        width: 27px;
+        height: 27px;
+        background-image: url(../img/in.png);
+        position: absolute;
+        margin: 12px 0px 0px 117px;
+        cursor: pointer;
+    }
 
-.fbtitle3 {
-    width: 356px;
-    height: 294px;
-    align-items: center;
-    margin: -255px 0px 0px 1121px;
-}
+    .fbtitle {
+        width: 200px;
+        height: 294px;
+        align-items: center;
+        margin: -233px 0px 0px 510px
+    }
 
-.fbtitle3 h1 {
-    text-align: center;
-}
+    .fbtitle h1 {
+        text-align: center;
+        margin-left: 15px;
+    }
 
-.fbtitle3 p {
-    text-align: center;
+    .fbtitle p {
+        text-align: center;
+    }
+
+    .fbtitle2 {
+        width: 200px;
+        height: 249px;
+        margin: -296px 0px 0px 810px;
+    }
+
+    .fbtitle2 h1 {
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .fbtitle2 p {
+        text-align: center;
+        margin-left: 15px;
+    }
+
+    .fbtitle3 {
+        width: 356px;
+        height: 294px;
+        align-items: center;
+        margin: -255px 0px 0px 1121px;
+    }
+
+    .fbtitle3 h1 {
+        text-align: center;
+    }
+
+    .fbtitle3 p {
+        text-align: center;
+    }
 }
