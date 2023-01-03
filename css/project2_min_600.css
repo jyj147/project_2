@@ -21,25 +21,26 @@
 
     #slider .content h2 {
         font-family: 'Lobster', cursive;
-        font-size: 130px;
+        font-size: 108px;
         color: #ffce32;
         opacity: 0.7;
         position: absolute;
         top: -49px;
-        left: -18px;
+        left: 4px;
     }
 
     #slider .content h1 {
         position: absolute;
         top: 37px;
         left: 0;
-        font-size: 80px;
+        font-size: 59px;
         color: #ffce32;
         line-height: 80px;
+        margin-left: 8px;
     }
 
     #slider .content span {
-        font-size: 50px;
+        font-size: 39px;
         color: #fff;
     }
 
@@ -67,9 +68,9 @@
     }
 
     #slider .round {
-        width: 1000px;
+        width: 100%;
         height: 1000px;
-        border-radius: 50%;
+        border-radius: 48%;
         position: absolute;
         top: -180px;
         right: -180px;
@@ -77,7 +78,7 @@
     }
 
     section {
-        width: 1200px;
+        width: 100%;
         height: 836px;
         margin: auto;
         display: flex;
@@ -88,45 +89,44 @@
 
     section .popular {
         width: 100%;
-        height: 20%;
+        height: 17%;
 
     }
 
     .popular h1 {
-        font-size: 50px;
+        font-size: 38px;
+        margin-left: -13px;
     }
 
     .popular p {
-        font-size: 57px;
+        font-size: 40px;
         font-weight: bold;
         color: #ffce32;
         text-align: center;
-
+        margin-left: -13px;
     }
-
     /* 버튼슬라이드 */
     #slidewrap {
-        width: 1180px;
+        width: 100%;
         height: 470px;
         margin: 50px auto;
         position: relative;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .slide {
-        width: 2000px;
-        margin-left: 0px;
+        width: 277%;
+        /* margin-left: 0px; */
     }
 
     .slide li {
-        width: 380px;
+        width: 10.01%;
         height: 100%;
         float: left;
-
         background-color: #ffce32;
         background: rgb(199, 250, 189);
         padding: 20px;
-        margin-right: 20px;
+        margin: 0 1%;
         border-radius: 0 0 60px 0;
     }
 
@@ -135,16 +135,16 @@
     #slidewrap span,
     #slidewrap2 span {
         position: absolute;
-        top: 50%;
-        display: block;
-        font-size: 38px;
-        color: #fff;
-        line-height: 40px;
-        background: #009223;
-        cursor: pointer;
-        height: 50px;
-        transform: translateY(-50%);
-    }
+    top: 49%;
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    line-height: 40px;
+    background: #009223;
+    cursor: pointer;
+    height: 45px;
+    transform: translateY(-50%);
+}
 
     #slidewrap span:hover,
     #slidewrap2 span:hover {
@@ -166,7 +166,7 @@
 
     .slide li button {
         /* margin: 0; */
-        font-size: 25px;
+        font-size: 19px;
         width: 170px;
         height: 50px;
         text-align: center;
@@ -198,7 +198,7 @@
     }
 
     section .slide li p {
-        height: 60px;
+        height: 79px;
     }
 
     section h1 {
@@ -216,52 +216,53 @@
     .container {
         text-align: center;
         float: left;
-
+        width: 100%;
+      
     }
 
     .container p {
-        font-size: 40px;
+        font-size: 33px;
     }
 
     .container h2 {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .container span {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .container button {
-        font-size: 25px;
-        width: 170px;
-        height: 50px;
+        font-size: 22px;
+        width: 163px;
+        height: 42px;
         text-align: center;
-
         border: solid#009223 3px;
         border-radius: 30px;
         background-color: #fff;
     }
-
     .container button:hover {
         color: #ffce32;
     }
 
     #dongle {
-        width: 1200px;
+        width: 100%;
         height: 614px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        /* display: flex; */
+        /* justify-content: space-between;
+        align-items: center; */
         margin: auto;
     }
 
     .box {
         background-image: url(../img/circle_sandwich1.png);
-        width: 570px;
+        width: 54%;
         height: 504.08px;
-
-    }
-
+        margin-left: 207px;
+        margin-top: -164px;
+    } 
+   
+    
     .explain {
         background-color: honeydew;
         width: 100%;
@@ -276,13 +277,15 @@
     }
 
     .onion_icon {
-        width: 487px;
-        height: 261px;
+        width: 31%;
+        height: 186px;
         background-image: url(../img/onion.png);
         position: absolute;
-        top: -260px;
+        top: -187px;
         right: 0px;
     }
+
+    
 
     .explain1 {
         width: 1200px;
@@ -360,7 +363,7 @@
     }
 
     #slidewrap2 {
-        width: 1200px;
+        width: 100%;
         height: 470px;
         margin: 50px auto;
         position: relative;
@@ -393,10 +396,11 @@
     .slide2 h1 {
         text-align: center;
         margin-top: 100px;
+        font-size: 21px;
     }
 
     .slide2 img {
-        margin: 39px 0px -35px 132px;
+        margin: 39px 0px -35px 16px;
     }
 
     .insta {

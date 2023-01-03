@@ -75,10 +75,10 @@
                 <li>
                     <img src="img/bmt.jpg" alt="">
                     <h3>Italian bmt sandwich </h3>
-                    <p>페퍼로니, 살라미 그리고 햄이 만들어내는 최상의 조화! <br>
-                        전세계가 사랑하는 써브웨이의 베스트셀러! <br> Biggest Meatiest Tastiest, its’ B.M.T.
-                    </p>
-                    <button>$20 Oder Now</button>
+                   <p> 전세계가 사랑하는 써브웨이의 베스트셀러! <br>
+                   Biggest Meatiest Tastiest, its’ B.M.T. </p>
+                   <button>$20 Oder Now</button>
+                    
                 </li>
                 <li>
                     <img src="img/tuna.jpg" alt="">
@@ -113,34 +113,97 @@
         <script>
             $(function () {
 
-                var page = 0;
+                if (window.matchMedia("(min-width: 1200px)").matches) {
 
-                $('#slidewrap .prev').click(function () {
+                    var page = 0;
+                    var w=window.innerWidth/3;
+                    $('#slidewrap .prev').click(function () {
+                        page--;
 
-                    page--;
+                        if (page < 0) {
+                            page = 0;
+                            alert('첫번째 이미지');
+                            return;
+                        }
 
-                    if (page < 0) {
-                        page = 0;
-                        alert('첫번째 이미지');
-                        return;
-                    }
+                        $('.slide').stop().animate({ marginLeft: -400 * page }, 800);
 
-                    $('.slide').stop().animate({ marginLeft: -400 * page }, 800);
+                    });
 
-                });
+                    $('#slidewrap .next').click(function () {
+                        page++;
 
-                $('#slidewrap .next').click(function () {
+                        if (page > $('.slide li').length - 3) {
+                            page = $('.slide li').length - 3;
+                            alert('마지막 이미지');
+                            return;
+                        }
 
-                    page++;
+                        $('.slide').stop().animate({ marginLeft: -400 * page }, 800);
+                    });
 
-                    if (page > $('.slide li').length - 3) {
-                        page = $('.slide li').length - 3;
-                        alert('마지막 이미지');
-                        return;
-                    }
+                } else if (window.matchMedia("(min-width:600px) and (max-width:1199px)").matches) {
 
-                    $('.slide').stop().animate({ marginLeft: -400 * page }, 800);
-                });
+                    var page = 0;
+                    var w=window.innerWidth/3.06;
+                    $('#slidewrap .prev').click(function () {
+                        page--;
+                        
+
+                        if (page < 0) {
+                            page = 0;
+                            alert('첫번째 이미지');
+                            return;
+                        }
+
+                        $('.slide').stop().animate({ marginLeft: -w * page }, 800);
+
+                    });
+
+                    $('#slidewrap .next').click(function () {
+                        page++;
+
+                        if (page > $('.slide li').length - 3) {
+                            page = $('.slide li').length - 3;
+                            alert('마지막 이미지');
+                            return;
+                        }
+
+                        $('.slide').stop().animate({ marginLeft: -w * page }, 800);
+                    });
+                    
+                }else{
+                    var page = 0;
+                    var w=window.innerWidth;
+                    $('#slidewrap .prev').click(function () {
+                        page--;
+                        
+
+                        if (page < 0) {
+                            page = 0;
+                            alert('첫번째 이미지');
+                            return;
+                        }
+
+                        $('.slide').stop().animate({ marginLeft: -w * page }, 800);
+
+                    });
+
+                    $('#slidewrap .next').click(function () {
+                        page++;
+
+                        if (page > $('.slide li').length - 3) {
+                            page = $('.slide li').length - 3;
+                            alert('마지막 이미지');
+                            return;
+                        }
+
+                        $('.slide').stop().animate({ marginLeft: -w * page }, 800);
+                    });
+                }
+
+
+
 
 
             });

@@ -276,14 +276,13 @@
     }
 
     .onion_icon {
-        width: 487px;
-        height: 261px;
+        width: 27%;
+        height: 243px;
         background-image: url(../img/onion.png);
         position: absolute;
-        top: -260px;
+        top: -243px;
         right: 0px;
     }
-
     .explain1 {
         width: 1200px;
         height: 90%;
@@ -360,13 +359,12 @@
     }
 
     #slidewrap2 {
-        width: 1200px;
+        width: 100%;
         height: 470px;
         margin: 50px auto;
         position: relative;
         overflow: hidden;
     }
-
     .slide2 {
         width: 200%;
         height: 342px;
@@ -383,6 +381,7 @@
 
     .slide2 p {
         text-align: center;
+        margin-left: 32px;
     }
 
     .review {
@@ -396,7 +395,7 @@
     }
 
     .slide2 img {
-        margin: 39px 0px -35px 132px;
+        margin: 39px 0px -35px 118px;
     }
 
     .insta {
