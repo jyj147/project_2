@@ -7,7 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subway</title>
 
+    <style>
+        /* header{
+            background-color: #fff;
+            width: 100%;
+            height: 50px;
+            opacity: 0.9;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 3;
+        }
+
+        header .small{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            line-height: 40px;
+        } */
+
+    </style>
+
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common_min_600.css">
+    <link rel="stylesheet" href="css/common_max_599.css">
     <link rel="stylesheet" href="css/project2.css">
     <link rel="stylesheet" href="css/project2_min_600.css">
     <link rel="stylesheet" href="css/project2_max_599.css">
@@ -24,7 +47,7 @@
     <header>
         <div id="logo"></div>
 
-        <nav>
+        <nav id="to">
             <ul>
                 <li> <a href="#"> Home</a></li>
                 <li> <a href="#">Product</a></li>
@@ -32,18 +55,42 @@
                 <li> <a href="#">Blog</a></li>
                 <li> <a href="#">Contact</a></li>
             </ul>
+            <div class="order">
+                <div class="tell">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>:02-797-5034</span>
+                    <!-- <img src="img/phone.jpg" alt=""> -->
+        
+                </div>
+        
+                <div class="button">Order Online</div>
+            </div>
         </nav>
 
-        <div class="tell">
-            <i class="fa-solid fa-phone"></i>
-            <span>:02-797-5034</span>
-            <!-- <img src="img/phone.jpg" alt=""> -->
+        
 
+        <div class="menuicon">
+            <i class="fa-solid fa-bars"></i>
         </div>
-
-        <div class="button">Order Online</div>
     </header>
 
+        <script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+
+        <script>
+            $(function(){
+                $(".menuicon").click(function(){
+                    $("#to").slideToggle();
+                });
+            });
+
+            $(window).resize(function(){
+                if(window.innerWidth>=1200){
+                    $("#to").show();
+                }
+            });
+
+  
+        </script>
 
     <div id="slider">
 
@@ -353,8 +400,8 @@
         <div class="foot">
             <div class="fb">
                 <div class="fbimg"></div>
-                <p>Subway®를 찾아 주신 고객님께 감사드립니다.
-                    SUBWAY® is a Registered Trademark of Subway IP LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
+                <p>Subway®를 찾아 주신 고객님께 감사드립니다. <br>
+                    SUBWAY® is a Registered Trademark of Subway IP <br> LLC. © 2021 Subway IP LLC. All Rights Reserved.</p>
                 <div class="fbsocial">
                     <div class="twitter"><a href=""></a></div>
                     <div class="facebook"><a href="https://www.facebook.com/Subwaykr"></a></div>
@@ -384,7 +431,7 @@
                 </div>
             </div>
         </div>
-        </div>
+    </div>
     </footer>
 
 

@@ -76,7 +76,7 @@
         background-image: url(../img/slider.jpg);
     }
 
-    section {
+    body > section {
         width: 1200px;
         height: 836px;
         margin: auto;
@@ -122,8 +122,6 @@
         width: 380px;
         height: 100%;
         float: left;
-
-        background-color: #ffce32;
         background: rgb(199, 250, 189);
         padding: 20px;
         margin-right: 20px;
@@ -400,16 +398,21 @@
 
     .insta {
         display: flex;
+        width: 100%;
     }
 
 
 
     .insta section {
         width: 25%;
-        height: 426px;
+
 
         cursor: pointer;
         position: relative;
+    }
+
+    .insta img{
+        width: 100%;
     }
 
     .instalogo {
