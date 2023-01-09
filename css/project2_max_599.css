@@ -25,13 +25,13 @@
         color: #ffce32;
         opacity: 0.7;
         position: absolute;
-        top: 13px;
+        top: 30px;
         left: 7px;
     }
 
     #slider .content h1 {
         position: absolute;
-        top: 79px;
+        top: 89px;
         left: 0;
         font-size: 40px;
         color: #ffce32;
@@ -59,7 +59,7 @@
         background-color: #009223;
         color: #fff;
         position: absolute;
-        bottom: 56px;
+        bottom: 87px;
         margin-left: 8px;
     }
 
