@@ -105,7 +105,7 @@
         font-size: 20px;
         text-align: center;
         opacity: 0.9;
-        /* display: none; */
+        line-height: 30px;
 
     }
 
@@ -137,6 +137,7 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-around;
+        font-size: 14px;
     }
     
        .Subway{
@@ -146,11 +147,11 @@
        .fff{
         float: left;
         text-align: center;
-        width: 20%;
+        width: 36%;
        }
 
        #SUBWAY .f{
-        font-size: 25px;
+        font-size: 21px;
         font-weight: bold;
         line-height: 50px;
        }

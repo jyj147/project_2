@@ -135,11 +135,11 @@
     #slidewrap span,
     #slidewrap2 span {
         position: absolute;
-    top: 49%;
+    top: 40%;
     display: block;
-    font-size: 15px;
+    font-size: 28px;
     color: #fff;
-    line-height: 40px;
+    line-height: 47px;
     background: #009223;
     cursor: pointer;
     height: 45px;
@@ -166,7 +166,7 @@
 
     .slide li button {
         /* margin: 0; */
-        font-size: 19px;
+        font-size: 18px;
         width: 170px;
         height: 50px;
         text-align: center;
@@ -178,7 +178,7 @@
         flex-wrap: revert;
         float: left;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 13px;
     }
 
 
@@ -194,11 +194,13 @@
 
     section .slide li h3 {
         text-align: center;
-        height: 50px;
+        height: 45px;
+        font-size: 15px;
     }
 
     section .slide li p {
-        height: 79px;
+        height: 80px;
+        font-size: 15px;
     }
 
     section h1 {
@@ -213,11 +215,24 @@
 
     }
 
-    .container {
+    /* .container {
         text-align: center;
         float: left;
         width: 100%;
       
+    } */
+
+    .container {
+        text-align: center;
+        float: left;
+        width: 100%;
+        display: flex;
+        /* position: absolute; */
+        display: table-column;
+        /* margin: 5%; */
+        /* margin-left: 33%; */
+        /* margin-bottom: 10%; */
+        margin: -109px 0px 115px 0px;
     }
 
     .container p {
@@ -245,22 +260,31 @@
         color: #ffce32;
     }
 
-    #dongle {
-        width: 100%;
-        height: 614px;
-        /* display: flex; */
-        /* justify-content: space-between;
-        align-items: center; */
-        margin: auto;
-    }
-
-    .box {
-        background-image: url(../img/circle_sandwich1.png);
-        width: 54%;
-        height: 504.08px;
-        margin-left: 207px;
-        margin-top: -164px;
-    } 
+    /* #dongle {
+            width: 1200px;
+            height: 614px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+        } */
+    
+        #dongle {
+            width: 100%;
+            
+            align-items: center;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box {
+            background-image: url(../img/circle_sandwich1.png);
+            width: 55%;
+            height: 504.08px;
+            margin-top: -30px;
+            /* margin-left: 51%; */
+            position: fixed;
+        }
    
     
     .explain {

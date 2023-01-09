@@ -55,6 +55,7 @@
         text-align: center;
         opacity: 0.9;
         margin-right: 119px;
+        line-height: 32px;
     }
 
     .button:hover {
