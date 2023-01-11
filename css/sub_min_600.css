@@ -3,7 +3,7 @@
 @media all and (min-width:600px) and (max-width:1199px){
     #sub{
         width: 100%;
-        height: 487px;
+        height: 323px;
          background-color: rgb(255, 138, 0); 
         box-sizing: border-box;
         position: relative;
@@ -20,17 +20,17 @@
     
     #sub h2{
          color: aliceblue;
-         font-size: 52px;
+         font-size: 40px;
          position: absolute;
          bottom: 31%;
     }
 
     #sub .no1{
-        left:15%;
+        left:6%;
     }
 
     #sub .sand{
-        right: 9%;
+        right: 3%;
     }
    
     
