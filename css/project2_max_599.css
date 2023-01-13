@@ -47,11 +47,10 @@
         position: relative;
     }
 
-    #slider button {
-        color: #333;
+    #slider button a {
         width: 148px;
-        height: 49px;
-        font-size: 21px;
+        height: 43px;
+        font-size: 20px;
         float: left;
         text-align: center;
         border: solid #fff 3px;
@@ -61,9 +60,11 @@
         position: absolute;
         bottom: 87px;
         margin-left: 8px;
+        text-decoration: none;
+        line-height: 37px;
     }
 
-    #slider button:hover {
+    #slider button a:hover {
         color: #ffce32;
     }
 
