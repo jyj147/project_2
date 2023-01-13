@@ -72,7 +72,8 @@
         height: 324px;
         float: left;
         margin: 1%;
-        background-color: #fff
+        background-color: #fff;
+        border-radius: 6px;
     }
 
     article img {
