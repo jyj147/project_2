@@ -38,7 +38,7 @@
     #sub2{
         width: 100%;
         background-color: rgb(240, 240, 240);
-        height: 1000px;
+        height: 484px;
         box-sizing: border-box;
         position: relative;
         margin: auto;
@@ -69,7 +69,7 @@
 
     #sub2 article {
         width: 30%;
-        height: 324px;
+        height: 197px;
         float: left;
         margin: 1%;
         background-color: #fff;
