@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 @media all and (min-width:600px) and (max-width:1199px) {
     #slider {
         width: 100%;

@@ -24,9 +24,9 @@ ol {
         height: 100px;
         margin: 0 auto;
         position: absolute;
-            left: 0;
-            top: 0;
-            z-index: 3;
+        left: 0;
+        top: 0;
+        z-index: 3;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -107,6 +107,7 @@ ol {
         text-align: center;
         opacity: 0.9;
         line-height: 30px;
+        text-decoration-line: none;
     }
 
     .button:hover {
